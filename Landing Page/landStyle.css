@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Inter', sans-serif;
+    background: #0f0f1a;
+    color: #f4f4f4;
+}
+.hero{
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+                url("images/timerealms-bg.png") center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 2rem;
+}
+.hero h1{
+    font-family: 'Orbitron', sans-serif;
+    font-size: 3.5rem;
+    color: #fff;
+    margin-bottom: 1rem;
+}
+.hero p{
+    font-size: 1.25rem;
+    max-width: 600px;
+    margin: 0 auto 2rem;
+    color: #ddd;
+}
+.btn-primary{
+    padding: 0.75rem 2rem;
+    background: #ff6b00;
+    color: #fff;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+.btn-primary:hover{
+    background: #ff8533;
+}
+.features{
+    padding: 4rem 2rem;
+    text-align: center;
+}
+.features h2{
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+.feature-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+.feature-box{
+    background: #1b1b2f;
+    padding: 2rem;
+    border-radius: 10px;
+    border: 1px solid #2f2f4f;
+}
+.feature-box:hover {
+  border-color: #ff6b00;
+  background: #222243;
+  transition: all 0.3s ease;
+}
+.preview{
+    background: #141421;
+    padding: 4rem 2rem;
+    text-align: left;
+}
+.preview h2{
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+.preview-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 1.5rem;
+}
+.era{
+    background: #282840;
+    padding: 2rem;
+    border-radius: 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #ffa94d;
+}
+.cta{
+    padding: 4rem 2rem;
+    text-align: center;
+    background: #1a1a2e;
+}
+.cta h2{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+.cta input{
+    padding: 0.75rem;
+    border-radius: 6px;
+    border: none;
+    margin-right: 0.5rem;
+    width: 250px;
+    max-width: 80%;
+}
+.cta button{
+    padding: 0.75rem 1.5rem;
+    background: #ff6b00;
+    color: white;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.cta button:hover{
+    background: #ff8533;
+}
+footer{
+    text-align: center;
+    padding: 2rem;
+    font-size: 0.9rem;
+    background: #101020;
+    color: #ccc;
+    border-top: 1px solid #222;
+}
+.features h2, .preview h2, .cta h2, footer {
+  font-family: 'Orbitron', sans-serif;
+}
+.btn-primary, .cta button {
+  font-family: 'Orbitron', sans-serif;
+}
+
+
+
