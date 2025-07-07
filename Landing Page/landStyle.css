@@ -14,7 +14,7 @@ body{
 .hero{
     height: 100vh;
     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-                url(""https://raw.githubusercontent.com/Bhoomi9393/Codsoft-Web-Development/main/images/timerealms-bg.png") center/cover no-repeat;
+                url("https://raw.githubusercontent.com/Bhoomi9393/Codsoft-Web-Development/main/images/timerealms-bg.png") center/cover no-repeat;
     display: flex;
     align-items: center;
     justify-content: center;
