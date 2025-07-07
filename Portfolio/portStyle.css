@@ -11,7 +11,7 @@ body {
   color: #2c3e50;
   line-height: 1.8;
   padding: 30px 20px;
-  background-image: linear-gradient(to right, rgba(255,255,255,0.85), rgba(255,255,255,0.85)),url('https://github.com/Bhoomi9393/Codsoft-Web-Development/blob/7abe28f6346f44022d5fcfe09eae79427cb79cc8/images/background.png');
+  background-image: linear-gradient(to right, rgba(255,255,255,0.85), rgba(255,255,255,0.85)),url('"https://raw.githubusercontent.com/Bhoomi9393/Codsoft-Web-Development/main/images/background.png');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
