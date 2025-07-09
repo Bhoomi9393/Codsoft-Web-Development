@@ -103,12 +103,23 @@ ul li {
 
 
 a {
-  color: #1a73e8;
+  display: inline-block;
+  padding: 10px 16px;
+  margin: 8px 6px 0 0;
+  background-color: #4379be;
+  color: #fff;
+  border-radius: 6px;
+  font-weight: 500;
+  transition: background-color 0.2s ease;
 }
 a:hover {
-  text-decoration: underline;
+  background-color: #16519f;
 }
-
+#resume p strong {
+  display: block;
+  text-align: left;
+  color: #666;
+  margin: 8px 0;
 
 footer {
   text-align: center;
