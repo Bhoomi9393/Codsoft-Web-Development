@@ -83,12 +83,29 @@
 
   <script>
   const btn = document.getElementById('toggle-theme');
+  function setTheme(theme) {
+    document.body.classList.toggle('dark', theme === 'dark');
+    btn.textContent = theme === 'dark' ? '☀️' : '🌙';
+  }
+  window.addEventListener('DOMContentLoaded', () => {
+    const params = new URLSearchParams(location.search);
+    const theme = params.get('theme') || sessionStorage.getItem('theme') || 'light';
+    setTheme(theme);
+    history.replaceState({ theme }, '', `?theme=${theme}`);
+  });
   btn.addEventListener('click', () => {
-    document.body.classList.toggle('dark');
-    btn.textContent = document.body.classList.contains('dark') ? '☀️' : '🌙';
+    const isDark = document.body.classList.toggle('dark');
+    const theme = isDark ? 'dark' : 'light';
+    btn.textContent = theme === 'dark' ? '☀️' : '🌙';
+    sessionStorage.setItem('theme', theme);
+    history.replaceState({ theme }, '', `?theme=${theme}`);
+  });
+  window.addEventListener('popstate', (e) => {
+    const theme = e.state?.theme || 'light';
+    setTheme(theme);
+    sessionStorage.setItem('theme', theme);
   });
 </script>
-
 
 </body>
 </html>
