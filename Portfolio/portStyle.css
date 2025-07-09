@@ -102,7 +102,7 @@ ul li {
 }
 
 
-a {
+#resume a {
   display: inline-block;
   padding: 10px 16px;
   margin: 8px 6px 0 0;
@@ -112,7 +112,7 @@ a {
   font-weight: 500;
   transition: background-color 0.2s ease;
 }
-a:hover {
+#resume a:hover {
   background-color: #16519f;
 }
 #resume p strong {
@@ -129,6 +129,7 @@ footer {
   margin-top: 50px;
 }
 .back-to-top {
+  display: inline-block;
   font-size: 0.9rem;
 }
 
