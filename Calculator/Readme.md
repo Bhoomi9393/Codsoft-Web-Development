@@ -1,4 +1,4 @@
-# Basic Calculator
+# Calculator
 
 An intuitive web-based calculator that performs basic arithmetic operations. It includes live result previews and keyboard support.
 
