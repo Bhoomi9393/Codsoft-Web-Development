@@ -20,7 +20,7 @@ body {
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-/* Navbar */
+
 .navbar {
   background-color: rgba(255, 255, 255, 0.9);
   backdrop-filter: blur(10px);
@@ -46,7 +46,7 @@ body {
   color: #155ab6;
 }
 
-/* Header */
+
 header {
   text-align: center;
   margin-bottom: 50px;
@@ -62,7 +62,7 @@ header h1 {
   font-style: italic;
 }
 
-/* Sections */
+
 section {
   max-width: 820px;
   margin: 50px auto;
@@ -80,7 +80,7 @@ section h2 {
   padding-bottom: 6px;
 }
 
-/* Skills */
+
 ul {
   padding-left: 22px;
   margin-top: 10px;
@@ -92,7 +92,7 @@ ul li {
   font-size: 1rem;
 }
 
-/* Projects */
+
 .project {
   margin-bottom: 20px;
   padding: 18px 20px;
@@ -101,7 +101,7 @@ ul li {
   border-radius: 8px;
 }
 
-/* Links */
+
 a {
   color: #1a73e8;
 }
@@ -109,7 +109,7 @@ a:hover {
   text-decoration: underline;
 }
 
-/* Footer */
+
 footer {
   text-align: center;
   font-size: 0.9rem;
@@ -121,7 +121,7 @@ footer {
   font-size: 0.9rem;
 }
 
-/* Profile Pic */
+
 .profile-pic {
   width: 130px;
   height: 130px;
@@ -132,7 +132,7 @@ footer {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Toggle Theme */
+
 #toggle-theme {
   padding: 6px 12px;
   background: #1a73e8;
@@ -147,7 +147,7 @@ footer {
   z-index: 1000;
 }
 
-/* Dark Mode */
+
 body.dark {
   background-color: #1e1e1e;
   background-image: linear-gradient(to right, rgba(30,30,30,0.85), rgba(30,30,30,0.85)),
