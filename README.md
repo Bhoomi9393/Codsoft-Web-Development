@@ -7,7 +7,7 @@ This repository contains the web development projects I built during my internsh
 ### 1. Personal Portfolio Website
 A clean and responsive portfolio site built with HTML and CSS to showcase my skills, projects, and contact information.
 
-### 2. Basic Calculator
+### 2. Calculator
 An interactive calculator built with HTML, CSS, and JavaScript. Supports keyboard input, live result preview, and user-friendly design.
 
 ### 3. Game Landing Page
