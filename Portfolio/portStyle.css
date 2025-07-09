@@ -127,7 +127,7 @@ footer {
   height: 130px;
   border-radius: 50%;
   object-fit: cover;
-  margin: 0 auto 15px;
+  margin-top: 20px auto 25px;
   display: block;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
