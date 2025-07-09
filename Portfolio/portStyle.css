@@ -190,7 +190,7 @@ body.dark a {
 body.dark ul li {
   color: #ddd;
 }
-body.dark .tagline {
+body.dark.header {
   color: #155ab6;
 }
 
