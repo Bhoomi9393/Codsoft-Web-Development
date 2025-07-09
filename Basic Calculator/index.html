@@ -1,34 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Basic Calculator</title>
-        <link href="calcStyle.css" rel="stylesheet">
-    </head>
-    <body>
-        <div class="calculator">
-            <input type="text" id="display" readonly aria-label="Input Display">
-            <input type="text" id="live-result" disabled>
-            <div class="buttons">
-                <button>7</button>
-                <button>8</button>
-                <button>9</button>
-                <button class="operator">/</button>
-                <button>4</button>
-                <button>5</button>
-                <button>6</button>
-                <button class="operator">*</button>
-                <button>1</button>
-                <button>2</button>
-                <button>3</button>
-                <button class="operator">-</button>
-                <button>0</button>
-                <button class="operator">C</button>
-                <button class="operator">+</button>
-                <button class="operator">=</button>
-            </div>
-        </div>
-        <script src="calc.js"></script>
-    </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Calculator</title>
+  <link href="calcStyle.css" rel="stylesheet" />
+</head>
+<body>
+  <div class="calculator">
+    <input type="text" id="display" readonly />
+    <input type="text" id="live-result" disabled />
+
+    <button id="toggle-mode" class="toggle-btn operator" aria-label="Toggle Mode">⚙️</button>
+
+    <div class="buttons standard-buttons">
+      <button>7</button>
+      <button>8</button>
+      <button>9</button>
+      <button class="operator">/</button>
+      <button>4</button>
+      <button>5</button>
+      <button>6</button>
+      <button class="operator">*</button>
+      <button>1</button>
+      <button>2</button>
+      <button>3</button>
+      <button class="operator">-</button>
+      <button>0</button>
+      <button class="operator">C</button>
+      <button class="operator">+</button>
+      <button class="operator">=</button>
+    </div>
+
+    <div class="buttons scientific-buttons hidden">
+      <button class="operator">sin</button>
+      <button class="operator">cos</button>
+      <button class="operator">tan</button>
+      <button class="operator">√</button>
+      <button class="operator">(</button>
+      <button class="operator">)</button>
+      <button class="operator">^</button>
+      <button class="operator">log</button>
+      <button class="operator">ln</button>
+      <button class="operator">π</button>
+      <button class="operator">e</button>
+      <button class="operator">.</button>
+      <button class="operator">C</button>
+      <button class="operator">=</button>
+      <button class="operator">+</button>
+      <button class="operator">-</button>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/mathjs@12.4.1/lib/browser/math.min.js"></script>
+  <script src="calc.js"></script>
+</body>
 </html>
