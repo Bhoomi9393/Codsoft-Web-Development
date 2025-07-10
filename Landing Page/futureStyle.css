@@ -13,7 +13,7 @@ body {
 .era-header {
   height: 100vh;
   width: 100%;
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),url("images/future.jpg") center/cover no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),url("https://raw.githubusercontent.com/Bhoomi9393/Codsoft-Web-Development/main/images/future.jpg") center/cover no-repeat;
   background-color: #111;
   background-size: cover;
   background-position: center;
