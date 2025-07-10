@@ -7,77 +7,108 @@
         <title>TimeRealms | Journey Through Time</title>
         <link href="https://fonts.googleapis.com/css2?family=Orbitron&family=Inter&display=swap" rel="stylesheet">
         <link href="landStyle.css" rel="stylesheet">
+        <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
     </head>
     <body>
-        <header class="hero">
-            <div class="hero-content">
-                <h1>TimeRealms</h1>
+        <div id="particles-js"></div>
+
+        <nav class="navbar">
+        <div class="logo">TimeRealms</div>
+        <ul class="nav-links">
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#signup">Join</a></li>
+            <li><a href="#preview">Eras</a></li>
+        </ul>
+        </nav>
+
+        <header class="hero" id="hero">
+            <div class="hero-content" data-aos="zoom-in">
+                <span class="textWrapper">
+                    <span class="letters">TimeRealms</span>
+                </span>
                 <p>Craft. Evolve. Travel across ancient, medieval, and futuristic eras.</p>
                 <a href="#signup" class="btn-primary">Join the Journey</a>
             </div>
         </header>
-        <section class="features">
+        <section class="features" id="features">
             <h2>Game Features</h2>
             <div class="feature-grid">
-                <div class="feature-box">
+                <div class="feature-box" data-aos="fade-up">
                     <h3>Sandbox Exploration</h3>
                     <p>Build, Gather and Survive in expansive custom worlds.</p>
                 </div>
-                <div class="feature-box">
+                <div class="feature-box" data-aos="fade-up">
                     <h3>Time Portals</h3>
                     <p>Unlock and explore ancient, medieval, modern and futuristic realms.</p>
                 </div>
-                <div class="feature-box">
+                <div class="feature-box" data-aos="fade-up">
                     <h3>Multiple Game Modes</h3>
                     <p>Play immersive stories or roam freely in infinite worlds.</p>
                 </div>
-                <div class="feature-box">
+                <div class="feature-box" data-aos="fade-up">
                     <h3>Seasonal Tournaments</h3>
                     <p>Join Global challenges and climb tier-specific leaderboards for rewards.</p>
                 </div>
-                <div class="feature-box">
+                <div class="feature-box" data-aos="fade-up">
                     <h3>Multiplayer</h3>
                     <p>Team up with friends or strangers to conquer public or private worlds.</p>
                 </div>
-                <div class="feature-box">
+                <div class="feature-box" data-aos="fade-up">
                     <h3>Offline Mode</h3>
                     <p>Enjoy solo sandbox play anytime without internet.</p>
                 </div>
-                <div class="feature-box">
+                <div class="feature-box" data-aos="fade-up">
                     <h3>Mini Games</h3>
                     <p>Play arcade-style games inside worlds to earn bonuses and unlock secrets.</p>
                 </div>
-                <div class="feature-box">
+                <div class="feature-box" data-aos="fade-up">
                     <h3>Branching Storylines</h3>
                     <p>Your starting era shapes your journey. Every choice echoes across timelines.</p>
                 </div>
-                <div class="feature-box">
+                <div class="feature-box" data-aos="fade-up">
                     <h3>Custom World Builder</h3>
                     <p>Create and share your own eras, landscapes, quests, and time-travel puzzles.</p>
                 </div>
-                <div class="feature-box">
+                <div class="feature-box" data-aos="fade-up">
                     <h3>AI-Driven NPCs</h3>
                     <p>Interact with smart characters who react to your decisions and remember your choices across eras.</p>
                 </div>
             </div>
         </section>
-        <section class="preview">
+        <section class="preview" id="preview">
             <h2>Explore the Eras</h2>
             <div class="preview-grid">
-                <div class="era ancient">Ancient World</div>
-                <div class="era medieval">Medieval Era</div>
-                <div class="era future">Futuristic Realm</div>
+                <div class="era ancient" data-aos="fade-left"><a href=ancient.html>Ancient World</a></div>
+                <div class="era medieval" data-aos="fade-left"><a href="medieval.html">Medieval Era</a></div>
+                <div class="era future" data-aos="fade-left"><a href="future.html">Futuristic Realm</a></div>
             </div>
         </section>
         <section class="cta" id="signup">
-            <h2>Be the first to know</h2>
-            <p>Sign up for beta access, dev logs, and early rewards.</p>
-            <form>
-                <label for="email">Email Address</label>
-                <input type="email" id="email" placeholder="Your Email" required>
-                <button type="submit">Notify Me</button>
+            <h2>Contact Us</h2>
+            <p>Interested in TimeRealms?</p>
+            <p>Want to shape the future of TimeRealms?</p>
+            <form action="https://formsubmit.co/bhoomi.init@gmail.com" method="POST">
+                <label for="name">Name</label><br>
+                <input type="text" id="name" name="name" placeholder="Your Name" required><br><br>
+                <label for="email">Email Address</label><br>
+                <input type="email" id="email" name="email" placeholder="you@example.com" required><br><br>
+                <label for="message">Message</label><br>
+                <textarea id="message" name="message" rows="4" placeholder="What excites you about TimeRealms?" required></textarea><br><br>
+                <input type="text" name="_honey" style="display:none">
+                <input type="hidden" name="_next" value="https://bhoomi9393.github.io/Codsoft-Web-Development/thank-you.html">
+                <input type="hidden" name="_subject" value="New TimeRealms Message!">
+                <button type="submit">Send Message</button>
             </form>
+
         </section>
+
         <footer>&copy; 2025 TimeRealms Studios. All Rights Reserved.</footer>
+
+        <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/tsparticles@2.12.0/tsparticles.bundle.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+        <script src="landScript.js"></script>
+
     </body>
 </html>
