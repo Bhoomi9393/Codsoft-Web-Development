@@ -1,0 +1,172 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #0a0f1f;
+  color: #d6e0f5;
+  font-family: 'Share Tech Mono', monospace;
+}
+
+.era-header {
+  height: 100vh;
+  width: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),url("images/future.jpg") center/cover no-repeat;
+  background-color: #111;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 2rem;
+  z-index: 1;
+  border-bottom: 5px solid #00ffff;
+}
+
+.era-header h1 {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 5rem;
+  color: #00ffff;
+  text-align: center;
+}
+
+.era-header p {
+  font-size: 1.6rem;
+  color: #99ccff;
+  margin-top: 0.5rem;
+}
+.era-header::before {
+  content: "";
+  position: absolute;
+  top: -100px; /* hide top part */
+  left: 0;
+  width: 100%;
+  height: calc(100% + 100px); /* add extra height to compensate */
+  background: url('images/modern.jpeg') no-repeat center top;
+  background-size: cover;
+  z-index: -1;
+}
+
+section {
+  margin: 2rem 0;
+  background-color: #0f162c;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #00ffe7;
+  font-family: 'Orbitron', sans-serif;
+  padding-top: 1rem;
+}
+
+ul {
+  padding-top: 3rem;
+  margin-left: 1rem;
+  padding-left: 1rem;
+  font-size: 1.3rem;
+  padding-bottom: 2rem;
+}
+
+ul li {
+  margin-bottom: 0.6rem;
+}
+
+.future-about p,
+.skills ul,
+.quests p {
+  font-size: 1.5rem;
+  line-height: 1.8;
+}
+
+.quest-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+  padding-bottom: 2rem;
+}
+
+.quest-box {
+  background: #12182c;
+  padding: 1.5rem;
+  border-radius: 10px;
+  border: 1px solid #333c5e;
+  transition: 0.3s;
+}
+
+.quest-box:hover {
+  background: #1e2440;
+  border-color: #00ffff;
+}
+
+.villain-name {
+  font-weight: bold;
+  color: #00ffea;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 1.5rem;
+  text-align: left;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+.villain-name:hover {
+  color: #00b3b3;
+  text-shadow: 0 0 5px #00b3b3;
+}
+
+.villain-description {
+  display: none;
+  font-size: 1.2rem;
+  color: #ccccff;
+  margin-top: 0.4rem;
+  background: #222235;
+  border-radius: 8px;
+  transition: all 0.3s ease-in-out;
+  padding: 0.8rem 1rem;
+  border-left: 3px solid #00ffe7;
+  overflow: hidden;
+}
+
+.villain-description.show {
+  max-height: 300px;
+  padding: 0.8rem 1rem;
+}
+.skills ul li {
+  list-style: square;
+  margin-bottom: 0.5rem;
+}
+h3{
+  font-size: 2rem;
+}
+#particles-js {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+footer{
+    text-align: center;
+    padding: 2rem;
+    font-size: 0.9rem;
+    background: #101020;
+    color: #ccc;
+    border-top: 1px solid #222;
+}
+@media (max-width: 768px) {
+  .era-header {
+    padding: 3rem 1rem;
+    height: auto;
+    min-height: 70vh;
+  }
+}
+
+
+

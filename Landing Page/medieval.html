@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>TimeRealms | Medieval Era</title>
+  <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&family=EB+Garamond&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="medievalStyle.css" />
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <div id="particles-js"></div>
+</head>
+<body>
+  <header class="era-header">
+    <h1>Medieval Era</h1>
+    <p>Where kingdoms rise, shadows grow, and destiny is forged by sword and soul.</p>
+  </header>
+
+  <section class="medieval-about">
+    <h2>About the Era...</h2>
+    <p>
+      Enter a realm of iron and honor. The Medieval Era brims with royal intrigue, dark forests, knight orders, cursed dungeons, and rebellious guilds.
+      It's a time where alliances can save empires — or doom them.
+    </p>
+    <ul>
+      <li>Classic fantasy setting with castles, knights, and dragons.</li>
+      <li>Politics, warfare, and religion control most kingdoms.</li>
+      <li>Magic exists but is feared or regulated by order councils.</li>
+      <li>Artifacts from the Ancient Era re-emerge as tools of war.</li>
+      <li>Players can pledge allegiance to empires or build rogue guilds.</li>
+    </ul>
+  </section>
+
+  <section class="quests">
+    <h2>Quests</h2>
+    <div class="quest-grid">
+      <div class="quest-box" data-aos="fade-up">
+        <h3>Defend the Northern Wall</h3>
+        <p>Repel cursed beasts and undead warbands from invading the realm.</p>
+      </div>
+      <div class="quest-box" data-aos="fade-up">
+        <h3>Unite the Broken Kingdom</h3>
+        <p>Bring rival houses under one banner or conquer them with diplomacy or force.</p>
+      </div>
+      <div class="quest-box" data-aos="fade-up">
+        <h3>Cleanse the Plagued Abbey</h3>
+        <p>Explore a haunted temple where fallen monks whisper secrets.</p>
+      </div>
+      <div class="quest-box" data-aos="fade-up">
+        <h3>Forge the Sacred Blade</h3>
+        <p>Gather dragonbone, crystal runes, and ancient fire to forge your legendary weapon.</p>
+      </div>
+      <div class="quest-box" data-aos="fade-up">
+        <h3>Uncover the Cursed Archive</h3>
+        <p>A forbidden library hides lost spells and secrets that can alter timelines.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="mobs">
+    <h2>Villains of the Medieval Era</h2>
+    <ul>
+      <li>
+        <button class="villain-name">The Black Inquisitor</button>
+        <p class="villain-description">A fallen priest using forbidden magic to control minds and rewrite fate.</p>
+      </li>
+      <li>
+        <button class="villain-name">Knightshade</button>
+        <p class="villain-description">An armored ghost who executes both tyrants and heroes indiscriminately.</p>
+      </li>
+      <li>
+        <button class="villain-name">Queen of Thorns</button>
+        <p class="villain-description">Ruler of a cursed valley, whose vines consume entire armies.</p>
+      </li>
+      <li>
+        <button class="villain-name">Iron Jester</button>
+        <p class="villain-description">A trickster who brings chaos with laughter, illusions, and traps.</p>
+      </li>
+    </ul>
+  </section>
+
+  <section class="skills">
+    <h2>Player Characteristics</h2>
+    <ul>
+      <li>Balanced Combat: Use a mix of sword, bow, and shield tactics.</li>
+      <li>Alchemy & Forging: Craft potions, poison, or enchanted weapons.</li>
+      <li>Honor System: Choices affect your reputation with kingdoms and factions.</li>
+      <li>Beast Training: Tame gryphons, direwolves, or even dragons.</li>
+      <li>Siege Skills: Build catapults and defend or raid castles.</li>
+    </ul>
+  </section>
+
+  <footer>&copy; 2025 TimeRealms Studios. All Rights Reserved.</footer>
+
+  <script>
+    document.querySelectorAll('.villain-name').forEach(button => {
+      button.addEventListener('click', () => {
+        const desc = button.nextElementSibling;
+        desc.classList.toggle('show');
+      });
+    });
+  </script>
+
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({ duration: 800 });
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/tsparticles@2.12.0/tsparticles.bundle.min.js"></script>
+  <script>
+    tsParticles.load("particles-js", {
+      fullScreen: { enable: false },
+      particles: {
+        number: { value: 50 },
+        color: { value: "#b392f0" },
+        shape: { type: "circle" },
+        opacity: { value: 0.5 },
+        size: { value: 3 },
+        move: {
+          enable: true,
+          speed: 0.6,
+          direction: "none",
+          random: false,
+          straight: false,
+          outModes: { default: "bounce" }
+        }
+      },
+      background: { color: "transparent" }
+    });
+  </script>
+
+
+</body>
+</html>

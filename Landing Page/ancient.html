@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>TimeRealms | Ancient Era</title>
+        <link href="https://fonts.googleapis.com/css2?family=Cinzel&family=Uncial+Antiqua&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="ancientStyle.css">
+        <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+    </head>
+    <body>
+        <header class="era-header">
+            <h1>Ancient Era</h1>
+            <p>Step into a time where myths were real and survival meant more than just strength</p>
+        </header>
+        <section class="ancient-about">
+            <h2>About the Era...</h2>
+            <p>
+                Step into a world lost to time — an age of crumbling temples, forgotten gods, sacred relics, and untamed wilderness. The Ancient Era is where your journey begins. Knowledge is hidden in ruins, power flows through artifacts, and whispers of a primordial prophecy guide the fate of all time-travelers. Every stone tells a story, but only a few can understand them.
+            </p>
+            <ul>
+                <li>The dawn of civilizations, myths, magic, and survival.</li>
+                <li>Set in prehistoric-meets-mystical world with tribal societies, ancient temples, and natural dangers.</li>
+                <li>Technology is minnimal; power comes from nature, spirit worship, ancestral rituals.</li>
+                <li>Magic is primal: based on earth, fire, water, space and air elements.</li>
+                <li>A time where Gods walked among mortals and every creature had a legend.</li>
+            </ul>
+        </section>
+        <section class="quests">
+            <h2>Quests</h2>
+            <p>It consists countless dynamic quests but here are some major ones listed:</p>
+            <div class="quest-grid">
+                <div class="quest-box" data-aos="fade-up">
+                    <h3>Recover the lost Relics</h3>
+                    <p>Find legendary artifacts scattered across forbidden jungles and deserts</p>
+                </div>
+                <div class="quest-box" data-aos="fade-up">
+                    <h3>Awaken the Ancients</h3>
+                    <p>Perform rituals to communicate with ancient spirits guarding the truth</p>
+                </div>
+                <div class="quest-box" data-aos="fade-up">
+                    <h3>Build the First Settlements</h3>
+                    <p>Craft tools, shelter, and defenses from primitive materials</p>
+                </div>
+                <div class="quest-box" data-aos="fade-up">
+                    <h3>Unlock the Time Gate</h3>
+                    <p>Solve environmental puzzles that activate ancient technology</p>
+                </div>
+                <div class="quest-box" data-aos="fade-up">
+                    <h3>Confront the forgotten Trials</h3>
+                    <p>Complete challenges left by a mysterious civilization that mastered time long before you.</p>
+                </div>
+            </div>
+        </section>
+        <section class="mobs">
+            <h2>Villains of Ancient Era</h2>
+            <ul>
+                <li>
+                    <button class="villain-name">The Shaded Priests</button>
+                    <p class="villain-description">Corrupted sorcerers who once worshipped the gods but now drain power from the land.</p>
+                </li>
+                <li>
+                    <button class="villain-name">Sand Wraiths</button>
+                    <p class="villain-description">Undead guardians cursed to protect sacred tombs.</p>
+                </li>
+                <li>
+                    <button class="villain-name">Primordial Beasts</button>
+                    <p class="villain-description">Giant serpents, elemental golems, and mythical creatures that test your strength.</p>
+                </li>
+                <li>
+                    <button class="villain-name">The Forgotten King</button>
+                    <p class="villain-description">A warlord cursed for defying the gods; he controls an undead army.</p>
+                </li>
+                <li>
+                    <button class="villain-name">Serpent Oracle</button>
+                    <p class="villain-description">A shape-shifting sorceress who tests your moral choices.</p>
+                </li>
+            </ul>
+        </section>
+        <section class="skills">
+            <h2>Player Skills</h2>
+            <ul>
+                <li>Increased Instinct: High perception for uncovering hidden paths and secrets.</li>
+                <li>Limited Technology: Rely on raw survival skills, not machinery.</li>
+                <li>Spiritual Sensitivity: Ability to interact with spirits, visions, and time echoes.</li>
+                <li>Resourceful Crafting: Use bones, stone, wood, and fire to build unique items.</li>
+                <li>Weapons & Tools: Bone knives, obsidian swords, ritual staffs.</li>
+                <li>Taming pets: Taming wild beasts to fight alongside you and harmless ones to get resources and services.</li>
+            </ul>
+        </section>
+
+        <footer>&copy; 2025 TimeRealms Studios. All Rights Reserved.</footer>
+
+        <script>
+            
+            document.querySelectorAll('.villain-name').forEach(button => {
+                button.addEventListener('click', () => {
+                    const description = button.nextElementSibling;
+                    description.classList.toggle('show');
+                });
+            });
+
+
+        </script>
+        <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
+
+    </body>
+</html>

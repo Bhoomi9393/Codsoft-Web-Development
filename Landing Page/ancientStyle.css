@@ -1,0 +1,123 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Cinzel', serif;
+  background: #0e0d10;
+  color: #eae2cf;
+  padding: 2rem;
+  line-height: 1.7;
+  font-size: 18px;
+}
+
+h1, h2, h3 {
+  font-family: 'Uncial Antiqua', cursive;
+  color: #f3c97c;
+  margin-bottom: 1rem;
+}
+.era-header {
+  text-align: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)), url('images/ancient.png') center/cover no-repeat;
+  padding: 4rem 2rem;
+  border-radius: 10px;
+  margin-bottom: 3rem;
+}
+.era-header h1 {
+  font-size: 3rem;
+}
+.era-header p {
+  font-size: 1.2rem;
+  color: #dac7a2;
+}
+section {
+  margin-bottom: 4rem;
+  padding: 1rem;
+  background: #181616;
+  border-left: 4px solid #aa8540;
+  border-radius: 8px;
+}
+.ancient-about ul {
+  margin-top: 1rem;
+  padding-left: 1.5rem;
+}
+.ancient-about li {
+  margin-bottom: 0.6rem;
+}
+.quest-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+.quest-box {
+  background: #26211a;
+  padding: 1.5rem;
+  border: 1px solid #3f3727;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+.quest-box:hover {
+  background: #2f281f;
+  border-color: #d4a648;
+}
+.mobs ul {
+  list-style: none;
+  padding: 0;
+}
+.villain-name {
+  font-family: 'Uncial Antiqua', cursive;
+  background: none;
+  border: none;
+  color: #dfac51;
+  font-size: 1.1rem;
+  cursor: pointer;
+  margin-top: 1rem;
+  display: block;
+  text-align: left;
+  transition: all 0.3s ease-in-out;
+}
+.villain-name:hover {
+  color: #ffcc6f;
+  text-decoration: underline;
+}
+.villain-description {
+  display: none;
+  margin-top: 0.4rem;
+  background: #1d1b17;
+  padding: 0.8rem 1rem;
+  border-left: 3px solid #caa243;
+  color: #e0d8c0;
+  border-radius: 4px;
+  transition: all 0.3s ease-in-out;
+  overflow: hidden;
+}
+.villain-description.show {
+  max-height: 200px;
+  padding: 0.8rem 1rem;
+}
+.skills ul {
+  padding-left: 1.5rem;
+}
+.skills li {
+  margin-bottom: 0.5rem;
+  list-style-type: square;
+}
+footer{
+    text-align: center;
+    padding: 2rem;
+    font-size: 0.9rem;
+    background: #101020;
+    color: #ccc;
+    border-top: 1px solid #222;
+}
+@media (max-width: 600px) {
+  .era-header h1 {
+    font-size: 2.2rem;
+  }
+  .quest-grid {
+    grid-template-columns: 1fr;
+  }
+}

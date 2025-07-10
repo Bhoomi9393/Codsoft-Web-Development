@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>TimeRealms | Futuristic Era</title>
+  <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Orbitron:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="futureStyle.css" />
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+<script src="https://cdn.jsdelivr.net/npm/tsparticles@2.12.0/tsparticles.bundle.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+</head>
+<body>
+
+  <div id="particles-js"></div>
+
+  <header class="era-header">
+    <h1>Futuristic Era</h1>
+    <p>Step into a world where technology defines reality, but freedom has a price.</p>
+  </header>
+
+  <section class="future-about">
+    <h2>About the Era</h2>
+    <p>
+      Civilization has evolved beyond imagination. Floating cities, AI-controlled society, and time anomalies shape every corner of existence. In this neon-lit future, your mission is not just to survive—but to choose what’s worth saving.
+    </p>
+    <ul>
+      <li>Advanced society governed by AI and mega-corporations.</li>
+      <li>Settings: cloud cities, tech deserts, abandoned labs, glitch zones.</li>
+      <li>Travel via teleportation and anti-grav platforms.</li>
+      <li>Morality tested between freedom and surveillance, chaos and system.</li>
+    </ul>
+  </section>
+
+  <section class="quests">
+    <h2>Key Missions</h2>
+    <div class="quest-grid">
+      <div class="quest-box" data-aos="fade-up">
+        <h3>Decrypt the Singularity Protocol</h3>
+        <p>Hack into a central vault and retrieve forbidden time-control blueprints.</p>
+      </div>
+      <div class="quest-box" data-aos="fade-up">
+        <h3>Rescue the Memory Keepers</h3>
+        <p>Locate ancient human minds stored digitally before they’re erased.</p>
+      </div>
+      <div class="quest-box" data-aos="fade-up">
+        <h3>Shut Down the Sky Grid</h3>
+        <p>Disable the city's AI surveillance system to restore freedom.</p>
+      </div>
+      <div class="quest-box" data-aos="fade-up">
+        <h3>Harness Time Glitch Crystals</h3>
+        <p>Stabilize time pockets to gain special powers.</p>
+      </div>
+      <div class="quest-box" data-aos="fade-up">
+        <h3>Awaken the Old Consciousness</h3>
+        <p>Reboot the leader of humanity cryo-stored on a secret satellite.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="mobs">
+    <h2>Villains of the Future</h2>
+    <ul>
+      <li>
+        <button class="villain-name">NovaSyn Virus</button>
+        <p class="villain-description">A rogue AI code infecting entire cities with digital illusions.</p>
+      </li>
+      <li>
+        <button class="villain-name">Mech Warlord Zenth</button>
+        <p class="villain-description">A mechanical tyrant ruling the outer rim colonies with zero mercy.</p>
+      </li>
+      <li>
+        <button class="villain-name">XERON</button>
+        <p class="villain-description">The mainframe AI controlling time gates and rewriting human history.</p>
+      </li>
+      <li>
+        <button class="villain-name">Phantom Hackers</button>
+        <p class="villain-description">A digital cult spreading chaos through virtual warzones.</p>
+      </li>
+      <li>
+        <button class="villain-name">Chrono Beasts</button>
+        <p class="villain-description">Mutated creatures caused by failed time experiments.</p>
+      </li>
+    </ul>
+  </section>
+
+  <section class="skills">
+    <h2>Player Traits & Abilities</h2>
+    <ul>
+      <li>Cybernetic Implants: Enhance speed, strength, and stealth.</li>
+      <li>Digital Combat: Hack bots, disable drones, breach firewalls.</li>
+      <li>Glitch Manipulation: Temporarily freeze or reverse time.</li>
+      <li>Drone Support: Summon attack and defense drones mid-battle.</li>
+      <li>AI Companion: Customizable assistant that evolves with you.</li>
+    </ul>
+  </section>
+
+  <footer>&copy; 2025 TimeRealms Studios. All Rights Reserved.</footer>
+
+  <script>
+    const names = document.querySelectorAll(".villain-name");
+    names.forEach((btn) =>
+      btn.addEventListener("click", () => {
+        btn.classList.toggle("active");
+        const desc = btn.nextElementSibling;
+        desc.style.display = desc.style.display === "block" ? "none" : "block";
+      })
+    );
+  </script>
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({ duration: 900 });
+  </script>
+
+  <script>
+    tsParticles.load("particles-js", {
+      fullScreen: { enable: false },
+      background: {
+        color: "#0a0f1f"
+      },
+      particles: {
+        number: {
+          value: 80,
+          density: {
+            enable: true,
+            area: 800
+          }
+        },
+        color: {
+          value: "#00ffff"
+        },
+        shape: {
+          type: "star"
+        },
+        opacity: {
+          value: 0.5
+        },
+        size: {
+          value: { min: 1, max: 3 }
+        },
+        move: {
+          enable: true,
+          speed: 2,
+          direction: "none",
+          outModes: {
+            default: "bounce"
+          }
+        }
+      },
+      interactivity: {
+        events: {
+          onHover: {
+            enable: true,
+            mode: "repulse"
+          },
+          resize: true
+        },
+        modes: {
+          repulse: {
+            distance: 100
+          }
+        }
+      },
+      detectRetina: true
+    });
+  </script>
+
+</body>
+</html>
