@@ -93,16 +93,14 @@
         <footer>&copy; 2025 TimeRealms Studios. All Rights Reserved.</footer>
 
         <script>
-            
             document.querySelectorAll('.villain-name').forEach(button => {
                 button.addEventListener('click', () => {
                     const description = button.nextElementSibling;
                     description.classList.toggle('show');
                 });
             });
-
-
         </script>
+        
         <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
         <script>
             AOS.init();
