@@ -162,11 +162,22 @@ footer{
 }
 @media (max-width: 768px) {
   .era-header {
-    padding: 3rem 1rem;
+    flex-direction: column;
+    padding: 2rem 1rem;
     height: auto;
-    min-height: 70vh;
+    min-height: 60vh;
+    text-align: center;
+  }
+
+  .era-header h1 {
+    font-size: 2.4rem;
+  }
+
+  .era-header p {
+    font-size: 1.1rem;
   }
 }
+
 
 
 
