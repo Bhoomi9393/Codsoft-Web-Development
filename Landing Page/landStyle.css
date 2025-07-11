@@ -214,7 +214,8 @@ footer{
     font-size: 2.5rem;
   }
     .navbar {
-    flex-direction: column;
+    flex-wrap: wrap;
+    flex-direction: row;
     align-items: flex-start;
     padding: 1rem;
   }
