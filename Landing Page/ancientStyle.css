@@ -97,6 +97,7 @@ section {
 .villain-description.show {
   max-height: 200px;
   padding: 0.8rem 1rem;
+  display: block;
 }
 .skills ul {
   padding-left: 1.5rem;
