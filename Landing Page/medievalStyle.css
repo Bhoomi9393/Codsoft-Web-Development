@@ -15,6 +15,8 @@ section {
   background: #181616;
   border-left: 4px solid #aa8540;
   border-radius: 8px;
+  border-bottom: 3px solid #aa8540;
+  box-shadow: 0 8px 20px rgba(170, 133, 64, 0.4);
 }
 
 h1, h2 {
@@ -28,6 +30,8 @@ h1, h2 {
   padding: 4rem 2rem;
   border-radius: 10px;
   margin: 3rem auto;
+  border-bottom: 3px solid #aa8540;
+  box-shadow: 0 8px 20px rgba(170, 133, 64, 0.4);
 }
 
 .era-header p {
@@ -53,7 +57,7 @@ h1, h2 {
 }
 
 .quest-box {
-  background: #2a2a3d;
+  background: #1b1b24;
   padding: 1rem 1.5rem;
   border-left: 4px solid #ffb347;
   border-radius: 6px;
