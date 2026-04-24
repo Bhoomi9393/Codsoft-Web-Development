@@ -29,6 +29,7 @@ body {
   border-radius: 8px;
   z-index: 1;
   border-bottom: 5px solid #00ffff;
+  box-shadow: 0 8px 20px rgba(93, 227, 251, 0.4);
 }
 
 .era-header h1 {
@@ -84,14 +85,14 @@ ul li {
 .future-about p,
 .skills ul,
 .quests p {
-  font-size: 1.5rem;
-  line-height: 1.8;
+  font-size: 1.3rem;
+  line-height: 1.5;
 }
 
 .quest-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 1.5rem;
+  gap: 1.3rem;
   padding-bottom: 2rem;
 }
 
@@ -127,7 +128,7 @@ ul li {
 
 .villain-description {
   display: none;
-  font-size: 1rem;
+  font-size: 1.2rem;
   color: #ccccff;
   margin-top: 0.4rem;
   background: #222235;
@@ -184,7 +185,6 @@ footer{
     font-size: 1.1rem;
   }
 }
-
 
 
 
