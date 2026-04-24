@@ -6,6 +6,8 @@
 
 body {
   background: #0a0f1f;
+  padding: 1 rem;
+  overflow-x: hidden;
   color: #d6e0f5;
   font-family: 'Share Tech Mono', monospace;
 }
