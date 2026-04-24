@@ -1,12 +1,12 @@
 * {
   margin: 0;
-  padding: 1 rem;
+  padding: 2 rem;
   box-sizing: border-box;
 }
 
 body {
   background: #0a0f1f;
-  padding: 1 rem;
+  padding: 2 rem;
   overflow-x: hidden;
   color: #d6e0f5;
   font-family: 'Share Tech Mono', monospace;
