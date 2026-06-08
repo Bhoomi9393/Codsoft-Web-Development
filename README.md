@@ -1,4 +1,4 @@
-# CodSoft Web Development Internship Projects
+# Web Development Projects
 
 This repository contains the web development projects I built during my internship at **CodSoft**. The projects showcase my understanding of HTML, CSS, JavaScript, and responsive UI/UX principles.
 
